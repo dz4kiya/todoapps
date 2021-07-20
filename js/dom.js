@@ -33,14 +33,6 @@ function addTodo() {
     const textTodo = document.getElementById("title").value; //mengambil inputan yg ber id title terus dimasukkan ke variabel textTodo
     const timestamp = document.getElementById("date").value;
 
-    /* console.log("todo" + textTodo);                           //menampilkan ke console browser
-    console.log("timestamp" + timestamp);
-
-     for (let i = 0; i < 10; i++) {
-        const todo = makeTodo();
-        uncompletedTODOList.append(todo);
-    } */
-
     const todo = makeTodo(textTodo, timestamp);
     uncompletedTODOList.append(todo);
 
